@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 const { v4 } = require("uuid");
 
 
-contactsPath = path.join(__dirname, "/db/contacts.json");
+const contactsPath = path.join(__dirname, "/db/contacts.json");
 
 // TODO: задокументировать каждую функцию
 async function listContacts() {
