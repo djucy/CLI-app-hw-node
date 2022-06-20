@@ -30,7 +30,7 @@ async function removeContact(contactId) {
         return null;
     }
     const newListContacts = contacts.filter((_, index) => index !== idx);
-    await await fs.writeFile(contactsPath, JSON.stringify(newListContacts));;
+    await fs.writeFile(contactsPath, JSON.stringify(newListContacts));;
     return console.log(`${contacts[idx].name} is deleted`);
 }
 
